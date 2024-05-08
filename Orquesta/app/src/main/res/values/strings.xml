@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Orquesta</string>
+
+    <!--Login layout-->
+    <string name="login_titulo1">Hola</string>
+    <string name="login_titulo2">Introduce tu cuenta</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_contraseña">Contraseña</string>
+    <string name="btn_iniciar">INICIAR SESIÓN</string>
+    <string name="tv_registrar_ahora">¿No tienes una cuenta? Regístrate </string>
+
+    <!--Registro layout-->
+    <string name="reg_titulo">Crea tu cuenta</string>
+    <string name="hint_reg_nombre">Nombre</string>
+    <string name="hint_reg_apellidos">Apellidos</string>
+    <string name="hint_reg_email">Correo electrónico</string>
+    <string name="hint_reg_contraseña">Contraseña</string>
+    <string name="hint_conf_contraseña">Confirmar contraseña</string>
+    <string name="hint_reg_telefono">Teléfono</string>
+    <string name="hint_reg_trayectoria">Trayectoria</string>
+    <string name="hint_reg_instrumentos">Instrumentos</string>
+    <string name="btn_registrar">REGISTRAR</string>
+    <string-array name="usuario_tipo">
+        <item>Miembro</item>
+        <item>Director</item>
+    </string-array>
+    <string name="tv_login_ahora">¿Ya tienes una cuenta? Inicia sesión </string>
+
+    <!--Editar perfil layout-->
+    <string name="editar_titulo">Editar cuenta</string>
+    <string name="btn_modificar_datos">MODIFICAR</string>
+
+</resources>

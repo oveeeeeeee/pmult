@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_inicio"
+    android:id="@+id/constraintLayout"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:id="@+id/tv_registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reg_titulo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_reg_nombre"
+        app:layout_constraintTop_toBottomOf="@id/tv_registrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <EditText
+        android:id="@+id/et_apellidos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_reg_apellidos"
+        app:layout_constraintTop_toBottomOf="@id/et_nombre"
+        app:layout_constraintStart_toStartOf="@id/et_nombre"
+        app:layout_constraintEnd_toEndOf="@id/et_nombre"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_email_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_reg_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/et_apellidos"
+        app:layout_constraintStart_toStartOf="@id/et_apellidos"
+        app:layout_constraintEnd_toEndOf="@id/et_apellidos"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_contraseña_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_reg_contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/et_email_reg"
+        app:layout_constraintStart_toStartOf="@id/et_email_reg"
+        app:layout_constraintEnd_toEndOf="@id/et_email_reg"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_conf_contraseña"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_conf_contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/et_contraseña_reg"
+        app:layout_constraintStart_toStartOf="@id/et_contraseña_reg"
+        app:layout_constraintEnd_toEndOf="@id/et_contraseña_reg"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_telefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_reg_telefono"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/et_conf_contraseña"
+        app:layout_constraintStart_toStartOf="@id/et_conf_contraseña"
+        app:layout_constraintEnd_toEndOf="@id/et_conf_contraseña"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_trayectoria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_reg_trayectoria"
+        app:layout_constraintTop_toBottomOf="@id/et_telefono"
+        app:layout_constraintStart_toStartOf="@id/et_telefono"
+        app:layout_constraintEnd_toEndOf="@id/et_telefono"
+        android:layout_marginTop="16dp"/>
+    <Spinner
+        android:id="@+id/spinner_tipo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_trayectoria"
+        app:layout_constraintStart_toStartOf="@id/et_trayectoria"
+        app:layout_constraintEnd_toEndOf="@id/et_trayectoria"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:id="@+id/tv_instrumentos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_reg_instrumentos"
+        app:layout_constraintTop_toBottomOf="@id/spinner_tipo"
+        app:layout_constraintStart_toStartOf="@id/spinner_tipo"
+        app:layout_constraintEnd_toEndOf="@id/spinner_tipo"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_instrumentos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_reg_insttrumentos"
+        app:layout_constraintTop_toBottomOf="@id/et_telefono"
+        app:layout_constraintStart_toStartOf="@id/et_telefono"
+        app:layout_constraintEnd_toEndOf="@id/et_telefono"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_registrar"
+        android:layout_width="200dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/rosa"
+        app:layout_constraintTop_toBottomOf="@id/spinner_tipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <TextView
+        android:id="@+id/tv_login_ahora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_login_ahora"
+        android:textColor="@color/purple_500"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="18dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
